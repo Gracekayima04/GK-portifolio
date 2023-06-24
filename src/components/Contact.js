@@ -1,8 +1,11 @@
 import React from "react";
 
 export default function Contact() {
+  // eslint-disable-next-line
   const [name, setName] = React.useState("");
+  // eslint-disable-next-line
   const [email, setEmail] = React.useState("");
+  // eslint-disable-next-line
   const [message, setMessage] = React.useState("");
 
   function encode(data) {
@@ -12,7 +15,7 @@ export default function Contact() {
       )
       .join("&");
   }
-
+// eslint-disable-next-line
   function handleSubmit(e) {
     e.preventDefault();
     fetch("/", {
